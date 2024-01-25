@@ -1,500 +1,587 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="img/favicon.png" type="image/png">
-    <title>Jameel Altaf Portfolio</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="vendors/linericon/style.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
-    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-    <link rel="stylesheet" href="vendors/animate-css/animate.css">
-    <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
-    <!-- main css -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jameel Altaf Wani</title>
+
+
+  <!-- Favicons -->
+  <link href="assets/res/who-am-i.png" rel="icon">
+  <link href="assets/res/profile.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" type="text/css" href="assets/css/app.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/effects.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/animations.css">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700,800&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
 
-    <!--================Header Menu Area =================-->
-    <header class="header_area">
-        <div class="main_menu" id="mainNav">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container box_1620">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="services.html">Services</a>
-                                <li class="nav-item submenu dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="portfolio-details.html">Project Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item submenu dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <i class="bx bx-menu mobile-nav-toggle d-lg-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav id="navbar" class="navbar nav-menu d-flex flex-row" >
+      <ul>
+        <li><a href="#home" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#experience" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Experience</span></a>
+        </li>
+        <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Skills</span></a></li>
+        <!-- <li><a href="#projects" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Projects</span></a></li> -->
+        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header -->
+
+  <!--- - - - - - - - - -- - - - - - - - - - - Home Section - - - - - - - - - -- - - - - - - - - - - -->
+  <section id="home" class="diagonal-split-background">
+    <div class="row">
+
+      <div class="col-12 home_half_column btn-container">
+        <div class=" btn-container">
+          <img class="cente mx-auto btn--shockwave" id="profile-image" src="assets/res/profile-image-w.png">
         </div>
-    </header>
-    <!--================Header Menu Area =================-->
 
-    <!--================Home Banner Area =================-->
-    <section class="home_banner_area">
-        <div class="banner_inner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="home_left_img">
-                            <img src="img/banner/home-left-1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="banner_content">
-                            <h5>This is me</h5>
-                            <h2>Jameel Altaf</h2>
-                            <p>You will begin to realise why this exercise is called the Dickens Pattern (with reference to the ghost showing Scrooge some different futures)</p>
-                            <a class="banner_btn" href="#">Hire me!</a>
-                        </div>
-                    </div>
-                </div>
+        <div class="content">
+          <div class="center">
+            <div class="home-text" data-aos="zoom-in" data-aos-delay="100">
+              <h1>Jameel Altaf Wani</h1>
+              <h2>I'm <span class="typed" data-typed-items=" an SEO Specialist, a Social Media Specialist, a Search Engine Marketing Specialist, a Freelancer, "></span></h2>
             </div>
+          </div>
         </div>
-    </section>
-    <!--================End Home Banner Area =================-->
+      </div>
 
-    <!--================Welcome Area =================-->
-    <section class="welcome_area p_120">
-        <div class="container">
-            <div class="row welcome_inner">
-                <div class="col-lg-6">
-                    <div class="welcome_text">
-                        <h4>About Myself</h4>
-                        <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate
-                            behavior is often laughed.</p>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="wel_item">
-                                    <i class="lnr lnr-database"></i>
-                                    <h4>$2.5M</h4>
-                                    <p>Total Donation</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="wel_item">
-                                    <i class="lnr lnr-book"></i>
-                                    <h4>1465</h4>
-                                    <p>Total Projects</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="wel_item">
-                                    <i class="lnr lnr-users"></i>
-                                    <h4>3965</h4>
-                                    <p>Total Volunteers</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="tools_expert">
-                        <h3>Tools Expertness</h3>
-                        <div class="skill_main">
-                            <div class="skill_item">
-                                <h4>After Effects <span class="counter">85</span>%</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill_item">
-                                <h4>Photoshop <span class="counter">90</span>%</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill_item">
-                                <h4>Illustrator <span class="counter">70</span>%</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill_item">
-                                <h4>Sublime <span class="counter">95</span>%</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill_item">
-                                <h4>Sketch <span class="counter">75</span>%</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="col-12 home_full_columnn">
+        <!-- <div class="center text-center height-100 "> -->
+        <!-- <button id="let" class="text-center btn btn-info btn-md">START</button>
+            <button id="start" class="text-center btn btn-info btn-md">SHOW</button> -->
+        <div class="social-links text-center">
+          <a href="https://ca.linkedin.com/in/jameelwani" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <!-- <a href="https://www.instagram.com/kulartist/" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://play.google.com/store/apps/developer?id=Gilpix" class="play-store"><i
+              class="bx bxl-play-store"></i></a>
+          <a href="https://github.com/Gilpix" class="github"><i class="bx bxl-github"></i></a>
+          <a href="https://www.instagram.com/gilpixphotography/" class="stack-overflow"><i
+              class='bx bxl-instagram-alt'></i></a> -->
         </div>
-    </section>
-    <!--================End Welcome Area =================-->
+        <!-- </div> -->
+      </div>
+    </div>
+  </section>
 
-    <!--================Feature Area =================-->
-    <section class="feature_area p_120">
-        <div class="container">
-            <div class="main_title">
-                <h2>offerings to my clients</h2>
-                <p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each.</p>
-            </div>
-            <div class="feature_inner row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature_item">
-                        <i class="flaticon-city"></i>
-                        <h4>Architecture</h4>
-                        <p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature_item">
-                        <i class="flaticon-skyline"></i>
-                        <h4>Interior Design</h4>
-                        <p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature_item">
-                        <i class="flaticon-sketch"></i>
-                        <h4>Concept Design</h4>
-                        <p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature_item">
-                        <i class="flaticon-city"></i>
-                        <h4>Architecture</h4>
-                        <p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature_item">
-                        <i class="flaticon-skyline"></i>
-                        <h4>Interior Design</h4>
-                        <p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature_item">
-                        <i class="flaticon-sketch"></i>
-                        <h4>Concept Design</h4>
-                        <p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</p>
-                    </div>
-                </div>
-            </div>
+
+  <!--- - - - - - - - - -- - - - - - - - - - - About Me Section - - - - - - - - - -- - - - - - - - - - - -->
+  <section id="about">
+    <div class="container  pb-5" data-aos="fade-up" data-aos-delay="100">
+      <h2 class="section-heading">About</h2>
+      <hr class="section-heading-hr">
+      <div class="row">
+        <div class="col-sm-6 col-lg-3 about-column" data-aos="fade-up">
+          <span class="material-icons" style="font-size: 54px;"> web</span>
+          <h3 class="about-icon-heading">User-Focused</h3>
+          <p class="about-content">Elevate user experience with tailored strategies for engaging, coversion-driven content.</p>
         </div>
-    </section>
-    <!--================End Feature Area =================-->
 
-    <!--================Projects Area =================-->
-    <section class="projects_area p_120">
-        <div class="container">
-            <div class="main_title">
-                <h2>Our Recent Completed Projects</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-            </div>
-            <div class="projects_fillter">
-                <ul class="filter list">
-                    <li class="active" data-filter="*"><a href="#">All Categories</a></li>
-                    <li data-filter=".brand"><a href="#">Branding</a></li>
-                    <li data-filter=".work"><a href="#">Creative Work </a></li>
-                    <li data-filter=".web"><a href="#">Web Design</a></li>
-                </ul>
-            </div>
-            <div class="projects_inner row">
-                <div class="col-lg-4 col-sm-6 brand web">
-                    <div class="projects_item">
-                        <img class="img-fluid" src="img/projects/projects-1.jpg" alt="">
-                        <div class="projects_text">
-                            <a href="portfolio-details.html">
-                                <h4>3D Helmet Design</h4>
-                            </a>
-                            <p>Client Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 brand work">
-                    <div class="projects_item">
-                        <img class="img-fluid" src="img/projects/projects-2.jpg" alt="">
-                        <div class="projects_text">
-                            <a href="portfolio-details.html">
-                                <h4>3D Helmet Design</h4>
-                            </a>
-                            <p>Client Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 work">
-                    <div class="projects_item">
-                        <img class="img-fluid" src="img/projects/projects-3.jpg" alt="">
-                        <div class="projects_text">
-                            <a href="portfolio-details.html">
-                                <h4>3D Helmet Design</h4>
-                            </a>
-                            <p>Client Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 brand web">
-                    <div class="projects_item">
-                        <img class="img-fluid" src="img/projects/projects-4.jpg" alt="">
-                        <div class="projects_text">
-                            <a href="portfolio-details.html">
-                                <h4>3D Helmet Design</h4>
-                            </a>
-                            <p>Client Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 brand work">
-                    <div class="projects_item">
-                        <img class="img-fluid" src="img/projects/projects-5.jpg" alt="">
-                        <div class="projects_text">
-                            <a href="portfolio-details.html">
-                                <h4>3D Helmet Design</h4>
-                            </a>
-                            <p>Client Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 brand work web">
-                    <div class="projects_item">
-                        <img class="img-fluid" src="img/projects/projects-6.jpg" alt="">
-                        <div class="projects_text">
-                            <a href="portfolio-details.html">
-                                <h4>3D Helmet Design</h4>
-                            </a>
-                            <p>Client Project</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="col-sm-6 col-lg-3 about-column" data-aos="fade-up">
+          <span class="material-icons" style="font-size: 54px;"> speed</span>
+          <h3 class="about-icon-heading">Adaptability</h3>
+          <p class="about-content">Agile digital marketing adept at navigating trends, ensuring sustained online prominence.</p>
         </div>
-    </section>
-    <!--================End Projects Area =================-->
 
-    <!--================Testimonials Area =================-->
-    <section class="testimonials_area p_120">
-        <div class="container">
-            <div class="main_title">
-                <h2>Testimonials</h2>
-                <p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each.</p>
-            </div>
-            <div class="testi_inner">
-                <div class="testi_slider owl-carousel">
-                    <div class="item">
-                        <div class="testi_item">
-                            <p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
-                            <h4>Fanny Spencer</h4>
-                            <a href="#"><i class="fa fa-star"></i></a>
-                            <a href="#"><i class="fa fa-star"></i></a>
-                            <a href="#"><i class="fa fa-star"></i></a>
-                            <a href="#"><i class="fa fa-star"></i></a>
-                            <a href="#"><i class="fa fa-star-half-o"></i></a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testi_item">
-                            <p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
-                            <h4>Fanny Spencer</h4>
-                            <a href="#"><i class="fa fa-star"></i></a>
-                            <a href="#"><i class="fa fa-star"></i></a>
-                            <a href="#"><i class="fa fa-star"></i></a>
-                            <a href="#"><i class="fa fa-star"></i></a>
-                            <a href="#"><i class="fa fa-star-half-o"></i></a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testi_item">
-                            <p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
-                            <h4>Fanny Spencer</h4>
-                            <a href="#"><i class="fa fa-star"></i></a>
-                            <a href="#"><i class="fa fa-star"></i></a>
-                            <a href="#"><i class="fa fa-star"></i></a>
-                            <a href="#"><i class="fa fa-star"></i></a>
-                            <a href="#"><i class="fa fa-star-half-o"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="col-sm-6 col-lg-3 about-column" data-aos="fade-up">
+          <span class="material-icons" style="font-size: 54px;"> speed</span>
+          <h3 class="about-icon-heading">Quick-Learner</h3>
+          <p class="about-content">Rapidly integrate cutting-edge insights for a competitive edge in dynamic digital landscapes.
+          </p>
         </div>
-    </section>
-    <!--================End Testimonials Area =================-->
 
-    <!--================Latest Blog Area =================-->
-    <section class="latest_blog_area p_120">
-        <div class="container">
-            <div class="main_title">
-                <h2>Latest Posts from Blog</h2>
-                <p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each.</p>
-            </div>
-            <div class="row latest_blog_inner">
-                <div class="col-lg-4">
-                    <div class="l_blog_item">
-                        <div class="l_blog_img">
-                            <img class="img-fluid" src="img/blog/home-blog/home-blog-1.jpg" alt="">
-                        </div>
-                        <div class="l_blog_text">
-                            <div class="date">
-                                <a href="#">25 October, 2017  |  By Mark Wiens</a>
-                            </div>
-                            <a href="#">
-                                <h4>Addiction When Gambling Becomes A Problem</h4>
-                            </a>
-                            <p>Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in front of their desktops, while delivery people scan bar codes with handhelds and workers in the field stay</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="l_blog_item">
-                        <div class="l_blog_img">
-                            <img class="img-fluid" src="img/blog/home-blog/home-blog-2.jpg" alt="">
-                        </div>
-                        <div class="l_blog_text">
-                            <div class="date">
-                                <a href="#">25 October, 2017  |  By Mark Wiens</a>
-                            </div>
-                            <a href="#">
-                                <h4>Make Myspace Your Best Designed Space</h4>
-                            </a>
-                            <p>Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in front of their desktops, while delivery people scan bar codes with handhelds and workers in the field stay</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="l_blog_item">
-                        <div class="l_blog_img">
-                            <img class="img-fluid" src="img/blog/home-blog/home-blog-3.jpg" alt="">
-                        </div>
-                        <div class="l_blog_text">
-                            <div class="date">
-                                <a href="#">25 October, 2017  |  By Mark Wiens</a>
-                            </div>
-                            <a href="#">
-                                <h4>Video Games Playing With Imagination</h4>
-                            </a>
-                            <p>Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in front of their desktops, while delivery people scan bar codes with handhelds and workers in the field stay</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="col-sm-6 col-lg-3 about-column" data-aos="fade-up">
+          <span class="material-icons" style="font-size: 54px;"> group_work</span>
+          <h3 class="about-icon-heading">Team-Player</h3>
+          <p class="about-content">Collaborative digital marketer, amplifying success through teamwork and shared goals.</p>
         </div>
-    </section>
-    <!--================End Latest Blog Area =================-->
+      </div>
 
-    <!--================Footer Area =================-->
-    <footer class="footer_area p_120">
-        <div class="container">
-            <div class="row footer_inner">
-                <div class="col-lg-5 col-sm-6">
-                    <aside class="f_widget ab_widget">
-                        <div class="f_title">
-                            <h3>About Me</h3>
-                        </div>
-                        <p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
-                        <p>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;
-                            <script>
-                                document.write(new Date().getFullYear());
-                            </script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
-                    </aside>
-                </div>
-                <div class="col-lg-5 col-sm-6">
-                    <aside class="f_widget news_widget">
-                        <div class="f_title">
-                            <h3>Newsletter</h3>
-                        </div>
-                        <p>Stay updated with our latest trends</p>
-                        <div id="mc_embed_signup">
-                            <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
-                                <div class="input-group d-flex flex-row">
-                                    <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
-                                    <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>
-                                </div>
-                                <div class="mt-10 info"></div>
-                            </form>
-                        </div>
-                    </aside>
-                </div>
-                <div class="col-lg-2">
-                    <aside class="f_widget social_widget">
-                        <div class="f_title">
-                            <h3>Follow Me</h3>
-                        </div>
-                        <p>Let us be social</p>
-                        <ul class="list">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                        </ul>
-                    </aside>
-                </div>
-            </div>
+      <div class="row mt-3 pt-4"  data-aos="fade-up">
+        <div class="about-me-image col-md-6 col-sm-12 py-2">
+          <img id="about-profile-image" src="assets/res/who-am-i.png">
         </div>
-    </footer>
-    <!--================End Footer Area =================-->
+        <div class="col-md-6 col-sm-12 py-3" data-aos="fade-up">
+          <h3 class="about-icon-heading ">Who Am I?</h3>
+          <p class="about-me-content">
+            <span class="first-letter">Hello,  </span>I'm Jameel Wani.<br>
+            I am a seasoned Digital Marketing Specialist with a strong proficiency in SEO.
+             My journey began modestly, evolving from experimenting with SEO to mastering paid campaigns.<br> <br>
+             Over the past 3 years, I've garnered valuable hands-on experience, initially focusing on SEO and 
+             later delving into the intricacies of paid campaigns. My trajectory has been a dynamic rollercoaster 
+             ride, and now, I am ready to translate my experiences into tangible results for your brand. In my commitment 
+             to staying ahead of industry trends, I recently completed HubSpot's SEO II certification. <br> <br> Additionally, I've 
+             reinforced my knowledge with Google's Digital Marketing and Ecommerce certification, ensuring that I 
+             am well-equipped with the latest strategies to elevate your digital success story. Let's collaborate and shape 
+             the success of your brand together!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= experience Section ======= -->
+  <section id="experience" class="experience">
+      <div class="container  pb-5" data-aos="fade-up">
+        <h2 class="section-heading">Experience</h2>
+        <hr class="section-heading-hr">
+
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6" data-aos="fade-up">
+          <h3 class="experience-title">Tezooo Innovations</h3>
+          <div class="experience-item">
+            <h4>Digital Marketing Specialist - Full time</h4>
+            <h5>November 2022 - Present</h5>
+            <p><em>Toronto, Canada</em></p>
+            <p>"Versatile software development agency specializing in creating apps, websites, and software for small businesses. Dedicated to enhancing online visibility and expanding reach."</p>
+            <ul>
+              <li>Providing SEO, SEM, and content management consulting to various clients, maintaining client websites as SEO Manager and heading clients’ social media presence.</li>
+              <li>Conducting targeted keyword research & content analyses to optimize web and social media copy and drive traffic.</li>
+              <li>Conducting systematic audits and analyzing the internal and external environment, creating action plans to guide clients in overhauling their digital marketing efforts.</li>
+              <li>Executing impactful SEO and social media strategies, coordinating all assets across the 360-cycle.</li>
+              <li>Successfully maximized ROI, exceeding goals and metrics, and increasing both brand reach and revenue consistently for all clients.</li>
+            </ul>
+            <p><b>Core Skills : </b>Search Engine Optimization | Search Engine Marketing | Paid Media | Social Media Optimization | Google Analytics | Google Search Console | Social Media Marketing | Email Marketing | Zoho CRM | Hubspot SEO Advanced | Github |</p>
+
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-6" data-aos="fade-up">
+          <h3 class="experience-title">Muraflex</h3>
+          <div class="experience-item pb-0">
+            <h4>Digital Marketing Specialist - Full time</h4>
+            <h5>September 2021 - November 2022</h5>
+            <p><em>Montreal, Quebec, Canada</em></p>
+            <p>Muraflex specializes in demountable glass wall systems for modern offices, offering flexible and innovative solutions.</p>
+            <ul>
+              <li>Strategized and executing impactful SEO strategies to enhance search engine ranking results from 36th rank to 2nd rank on google search engine and accelerate traffic.</li>
+              <li>Researched and identified powerful keywords to generate traffic; led copywriters in curating and developing engaging SEO content.</li>
+              <li>Coordinated data-driven link-building initiatives, boosting the number and quality of inbound links, and enhancing search engine rankings.</li>
+              <li>Directed comprehensive market research and gained competitive insights on both key audiences and competitors.</li>
+              <li>Produced and measured KPIs, leveraging SEO performance data to fine-tune strategies, optimize websites, and fuel traffic growth from 2k to 4k clicks in a period of 6 months.</li>
+              <li>Performed detailed SEO analyses and social media audits, uncovering actionable intelligence to accelerate improvement and meet all ROI goals. </li>
+              <li>Partnered with the key decision-makers in the Marketing department to streamline digital and social efforts and sustain competitive advantage.</li>
+              <!-- <li></li> -->
+            </ul>
+            <p><b>Core Skills : </b>Search Engine Optimization | Search Engine Marketing | Paid Media | Social Media Optimization | Google Analytics | Google Search Console | Social Media Marketing | Email Marketing | Zoho CRM | Hubspot SEO Advanced | Github |</p>
+          </div>
+       
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-6" data-aos="fade-up">
+          <h3 class="experience-title">T360 Payment Solutions</h3>
+          <div class="experience-item">
+            <h4>Digital Marketing Specialist</h4>
+            <h5>March 2021 - September 2021</h5>
+            <p><em>Montreal, Quebec, Canada</em></p>
+            <p>T360 Payment Solution is a payment solutions company providing services to various merchants. 
+              It helps small to medium businesses to be able to offer variety of payment options be it online payment gateways or payment hardware devices.</p>
+            <ul>
+              <li>Defined and delivered upon the overall ad funnel strategy, orchestrating measurable and actionable optimization tests to boost click-to-conversion rates, reduce CPL, and minimize cost of acquisition.</li>
+              <li>Partnered with cross-functional stakeholders (web designers, developers) to develop optimized content, improve the user journey, and strengthen robust funnels.</li>
+              <li>Established and implemented on-page and off-page SEO tactics, meeting monthly search goals without exception.</li>
+              <li>Conducted keyword research and competitor analyses to drive search engine ranking while supporting lead generation.</li>
+              <li>Coordinated link-building efforts to augment SEO ranking on SERP.</li>
+              <li>Employed analytics to track and measure performance, identify gaps and deficiencies, and develop
+                corrective measures to improve and optimize strategies.</li>
+              <li>Defined guidelines to ensure adherence to white hat SEO practices.</li>
+            </ul>
+            <p><b>Core Skills : </b>Search Engine Optimization | Search Engine Marketing | Paid Media | Social Media Optimization | Google Analytics | Google Search Console | Social Media Marketing | Email Marketing | Zoho CRM | Hubspot SEO Advanced | Github</p>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-6" data-aos="fade-up">
+          <h3 class="experience-title">Freelance - Fiverr</h3>
+          <div class="experience-item">
+            <h4>Digital Marketing Specialist</h4>
+            <h5>March 2020 - March 2021</h5>
+            <p><em>Montreal, Quebec, Canada</em></p>
+            <ul>
+              <li>Led end-to-end execution of digital marketing initiatives for diverse clients, crafting and implementing tailored advertising funnel strategies.</li>
+              <li>Collaborated flexibly with web designers and developers across projects to optimize content, improve user journeys, and enhance sales funnels.</li>
+              <li>Delivered consistent on-page and off-page SEO excellence, meeting and surpassing monthly search goals for a variety of client needs.</li>
+              <li>Conducted customized keyword research and competitor analyses to boost search engine rankings and drive lead generation across different industries.</li>
+              <li>Coordinated targeted link-building campaigns for diverse clients, elevating their SEO rankings on Search Engine Results Pages (SERP).</li>
+              <li>Utilized analytics to measure and track performance, identifying opportunities for improvement and implementing corrective measures.</li>
+              <li>Executed optimization tests tailored to each client, boosting click-to-conversion rates, reducing CPL, and optimizing cost of acquisition.</li>
+              <li>Established and maintained SEO guidelines to ensure ethical practices, fostering sustainable growth for clients in various sectors.</li>
+            <li>Enhanced organic traffic and online presence for a range of clients through a data-driven approach and strategic optimizations.</li>
+          <li>Demonstrated dedication to delivering measurable results, adapting strategies for optimal outcomes across a diverse portfolio of freelance projects.</li>  
+          </ul>
+            <p><b>Core Skills : </b>Search Engine Optimization | Search Engine Marketing | Paid Media | Social Media Optimization | Google Analytics | Google Search Console | Social Media Marketing | Email Marketing | Zoho CRM | Hubspot SEO Advanced | Github |</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End experience Section -->
+
+<!-- ======= Here's what i can do for you - Section ======= -->
+  <section id="skills">
+    <div id="card-back-block" data-aos="fade">
+      <h2 class="text-center skill-heading">Here's What I can do for you</h2>
+    </div>
+
+    <div class="card-group">
+      <div id="mobile-skill-card" data-aos="fade-right" class="card  mx-1">
+        <div class="card-img-top"><i class="fas fa-laptop-code fa-3x "></i></div>
+        <div class="card-body text-center">
+          <h5 class="text-center card-skills-text-heading card-title">Search Engine Optimization</h5>
+          <p class="card-skills-text card-text ">I like to code things from scratch and enjoy bringing ideas to life in
+            the browser and mobile.
+          </p>
+          <h5 class="text-center card-skills-inner-headings">Tools:</h5>
+          <div class="row">
+            <div class="col-6">
+                <span class="tools-list">Keyword Research</span>
+                <span class="tools-list">Link Building</span>
+                <span class="tools-list">Analytics</span>
+                <span class="tools-list">Technical SEO</span>
+                <span class="tools-list">Website Optimization</span>
+            </div>
+            <div class="col-6">
+              <span class="tools-list font-weight-bold">Google Keyword Planner</span>
+              <span class="tools-list font-weight-bold">SEMrush</span>
+              <span class="tools-list font-weight-bold">Google Analytics</span>
+              <span class="tools-list font-weight-bold">Google Search Console</span>
+              <span class="tools-list font-weight-bold">Page Speed Insights</span>
+            </div>
+          </div>
+        </div>
+        <div id="card-foot-left" class="card-footer card-foot">
+          <small class="text-muted">Search Engine Optimization</small>
+        </div>
+      </div>
+
+      <!-- Here -->
+      <div id="web-skill-card" data-aos="fade-left" class="card  mx-0">
+        <div class="card-img-top"><i class="fas fa-3x fa-palette"></i></div>
+        <div class="card-body text-center">
+          <h5 class="text-center card-skills-text-heading card-title">Social Media Optimization</h5>
+          <p class="card-skills-text card-text">I love to design web/mobile graphics, logos, edit videos and keep a track of my whole work.</p>
+          <h5 class="text-center card-skills-inner-headings">Tools:</h5>
+          <div class="row">
+            <div class="col-6">
+              <span class="tools-list">Content Optimization</span>
+              <span class="tools-list">Keywords Research</span>
+              <span class="tools-list">Hashtag Research</span>
+              <span class="tools-list">Analytics</span>
+              <span class="tools-list">Content Planning</span>
+              <span class="tools-list">Competitor Analysis</span>
+            </div>
+            <div class="col-6">
+              <span class="tools-list font-weight-bold">MarketMuse</span>
+              <span class="tools-list font-weight-bold">Google Keyword Planner</span>
+              <span class="tools-list font-weight-bold">CopyAI</span>
+              <span class="tools-list font-weight-bold">Supermetrics</span>
+              <span class="tools-list font-weight-bold">Hootsuite</span>
+              <span class="tools-list font-weight-bold">Sprout Social</span>
+            </div>
+          </div>
+        </div>
+        <div id="card-foot-right" class="card-footer">
+          <small class="text-muted">Social Media Optimization</small>
+        </div>
+      </div>
+
+      <div id="backend-skill-card" data-aos="fade-right" class="card  mx-1">
+        <div class="card-img-top"><i class="fas fa-3x fa-palette"></i></div>
+        <div class="card-body text-center">
+          <h5 class="text-center card-skills-text-heading card-title">Search Engine Marketing</h5>
+          <p class="card-skills-text card-text">I love to design web/mobile graphics, logos, edit videos and keep a track of my whole work.</p>
+          <h5 class="text-center card-skills-inner-headings">Tools:</h5>
+          <div class="row">
+            <div class="col-6">
+              <span class="tools-list">Customer Persona</span>
+              <span class="tools-list">Customer Journey</span>
+              <span class="tools-list">Competitive Analysis</span>
+              <span class="tools-list">Funnel Optimization</span>
+              <span class="tools-list">Campaign Optimization</span>
+              <span class="tools-list">Website Traffic</span>
+              <span class="tools-list">Google Ads Performance Grader</span>
+
+            </div>
+            <div class="col-6">
+              <span class="tools-list font-weight-bold">HubSpot</span>
+              <span class="tools-list font-weight-bold">UXPressia</span>
+              <span class="tools-list font-weight-bold">Ahrefs SERP Checker</span>
+              <span class="tools-list font-weight-bold">MouseFlow</span>
+              <span class="tools-list font-weight-bold">SEMrush</span>
+              <span class="tools-list font-weight-bold">Google Analytics</span>
+              <span class="tools-list font-weight-bold">Words Stream</span>
+            </div>
+          </div>
+        </div>
+        <div id="card-foot-right" class="card-footer">
+          <small class="text-muted">Search Engine Marketing</small>
+        </div>
+      </div>
+
+    </div>
+    <div class="card-group">
+      <div id="mobile-skill-card" data-aos="fade-right" class="card  mx-1">
+        <div class="card-img-top"><i class="fas fa-laptop-code fa-3x "></i></div>
+        <div class="card-body text-center">
+          <h5 class="text-center card-skills-text-heading card-title">Website Design and Development</h5>
+          <p class="card-skills-text card-text ">I like to code things from scratch and enjoy bringing ideas to life in
+            the browser and mobile.
+          </p>
+          <h5 class="text-center card-skills-inner-headings">Tools:</h5>
+          <div class="row">
+            <div class="col-6">
+                <span class="tools-list">User Interface</span>
+                <span class="tools-list">Content Management Systems</span>
+                <span class="tools-list">Domain and Hosting</span>
+                <span class="tools-list">User Experience</span>
+                <span class="tools-list">Conversion Rate Optimization</span>
+            </div>
+            <div class="col-6">
+              <span class="tools-list font-weight-bold">Figma</span>
+              <span class="tools-list font-weight-bold">Webflow, Wordpress, Hubspot and more</span>
+              <span class="tools-list font-weight-bold">GoDaddy, Bluehost, NameCheap, Hostgator</span>
+              <span class="tools-list font-weight-bold">HotJar</span>
+              <span class="tools-list font-weight-bold">Google Analytics, HubSpot, HotJar</span>
+            </div>
+          </div>
+        </div>
+        <div id="card-foot-left" class="card-footer card-foot">
+          <small class="text-muted">Website Design and Development</small>
+        </div>
+      </div>
+
+      <!-- Here -->
+      <div id="web-skill-card" data-aos="fade-left" class="card  mx-0">
+        <div class="card-img-top"><i class="fas fa-3x fa-palette"></i></div>
+        <div class="card-body text-center">
+          <h5 class="text-center card-skills-text-heading card-title">Research and Analysis</h5>
+          <p class="card-skills-text card-text">I love to design web/mobile graphics, logos, edit videos and keep a track of my whole work.</p>
+          <h5 class="text-center card-skills-inner-headings">Tools:</h5>
+          <div class="row">
+            <div class="col-6">
+              <span class="tools-list">Competitor Analysis</span>
+              <span class="tools-list">SWOT Analysis</span>
+              <span class="tools-list">SERP Analysis</span>
+            </div>
+            <div class="col-6">
+              <span class="tools-list font-weight-bold">Similar Web</span>
+              <span class="tools-list font-weight-bold">Visual Paradigm</span>
+              <span class="tools-list font-weight-bold">Ahrefs</span>
+            </div>
+          </div>
+        </div>
+        <div id="card-foot-right" class="card-footer">
+          <small class="text-muted">Research and Analysis</small>
+        </div>
+      </div>
+
+      <div id="backend-skill-card" data-aos="fade-right" class="card  mx-1">
+        <div class="card-img-top"><i class="fas fa-3x fa-palette"></i></div>
+        <div class="card-body text-center">
+          <h5 class="text-center card-skills-text-heading card-title">Brand Guidelines and Marketing Procedures</h5>
+          <p class="card-skills-text card-text">I love to design web/mobile graphics, logos, edit videos and keep a track of my whole work.</p>
+          <h5 class="text-center card-skills-inner-headings">Tools:</h5>
+          <div class="row">
+            <div class="col-6">
+              <span class="tools-list">Brand Guidelines</span>
+              <span class="tools-list">Social Media Procedure</span>
+              <span class="tools-list">Email Marketing Procedure</span>
+              <span class="tools-list">Social Media Scheduling Procedure</span>
+              <span class="tools-list">CMS Media Library Procedure</span>
+              <span class="tools-list">Blog Procedures</span>
+              <span class="tools-list">Image Procedures</span>
+              <span class="tools-list">Improvement Plan</span>
+            </div>
+          </div>
+        </div>
+        <div id="card-foot-right" class="card-footer">
+          <small class="text-muted">Brand Guidelines and Marketing Procedures</small>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <hr class="between-page-hr mb-5 py-2">
+
+  <!-- - - - - - - - - - -- - - - - - - - - - - Projects Section - - - - -- - - - - - - - - - - - - - -->
+  <!-- <section id="projects">
+
+    <div class="modal myModal  fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog pt-2 modal-dialog-centered modal-lg">
+        <div class="modal-content mt-4" style="border-radius: 15px;">
+          <img class="modal-image" src="assets/res/traffic.png">
+          <div class="container  about-project">
+            <h2 class="modal-heading mb-1">KulArtist</h2>
+            <p class="modal-short-text mb-0">Kuldeep Singh Software Developer Portfolio Website</p>
+            <hr class="mt-0 pt-0">
+            <p class="modal-desc-text ">KulArtist is an software developer portfolio static website for me(Kuldeep
+              Singh). Designed and written in html, css and javascript. Used two famous librearies <strong>Bootstrap
+                4.0</strong> and <strong>jQuery</strong> for more effects and designing.</p>
+          </div>
+          <div class="modal-footer py-0 pb-3 pr-4">
+            <div class="modal-footer-buttons">
+              <a href="" type="button" target="_blank" class="project-demo modal-footer-links my-1">visit</a>
+              <a href="" type="button" target="_blank" class="project-code mx-1 modal-footer-links">code</a>
+            </div>
+            <a href="" class="modal-cross-btn"><i class="fas fa-2x fa-times" data-dismiss="modal"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-0 pb-5 ">
+      <h2 class="section-heading">Projects</h2>
+      <hr class="section-heading-hr">
+      <div class="text all-projects-container text-center my-5">
+        <a id="all-projects" href="#/">
+          <div class="active-projects project-button ">all</div>
+        </a>
+        <a id="web-projects" href="#/">
+          <div class="project-button">web</div>
+        </a>
+        <a id="mobile-projects" href="#/">
+          <div class="project-button">mobile</div>
+        </a>
+        <a id="other-projects" href="#/">
+          <div class="project-button">others</div>
+        </a>
+      </div>
+
+      <div id="myProject" class="row">
+      </div>
+    </div>
+  </section> -->
+
+
+  <!-- - - - - - - - - - -- - - - - - - - - - - Contact Me Section - - - - - - - - - -- - - - - - - - - - -  -->
+  <section id="contact pt-4">
+    <div class="containeru contact ">
+      <h2 class="contact-section-heading">Let's Chat</h2>
+      <hr class="contact-section-heading-hr">
+      <div class="row">
+        <div class="container contact-form">
+          <p id="have-que">Have a question or want to work together?</p>
+          <div class="contact-details text-center pt-4">
+            <p><span id="mobile-number"><a href="tel:+1514-661-3264">+1(514)661-3264</a> </span> <span
+                class="vl mx-3"></span> <span id="mail"> <a class="mailto"
+                  href="mailto:jameelaltafw@gmail.com">jameelaltafw@gmail.com</a></span></p>
+          </div>
+          <form>
+            <div class="row">
+              <div class="col-6">
+
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                </div>
+                <div class="form-group">
+                  <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                </div>
+                <div class="form-group">
+                  <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+                </div>
+                
+                <div class="form-group">
+                  <textarea name="txtMsg" class="form-control" placeholder="Your Message *"
+                    style="width: 100%; height: 100px;"></textarea>
+                </div>
+                <div class="form-group">
+                  <input type="button" name="btnSubmit" class="btnContact" value="Send Message" />
+                </div>
+              </div>
+              <!-- <div class="col-md-6">
+                <div class="form-group">
+                  <textarea name="txtMsg" class="form-control" placeholder="Your Message *"
+                    style="width: 100%; height: 150px;"></textarea>
+                </div>
+              </div> -->
+            </div>
+          </form>
+        </div>
+      </div>
 
 
 
+      <div class="footer-links">
+        <div class="contact-image">
+          <a href="#home"><img id="go-top-img" src="https://image.ibb.co/kUagtU/rocket_contact.png"
+              alt="rocket_contact" /></a>
+        </div>
+        <div id="icons" class="my-5">
+          <a href="https://ca.linkedin.com/in/jameelwani">
+            <div class="social-icon-back"> <img class="social-icon-image" src="assets/res/linkedin-in-brands.svg"></div>
+          </a>
+          <!-- <a href="https://github.com/Gilpix">
+            <div class="social-icon-back"> <img class="social-icon-image" src="assets/res/github-brands.svg"></div>
+          </a>
+          <a href="https://stackoverflow.com/users/3320164/kulartist">
+            <div class="social-icon-back"> <img class="social-icon-image" src="assets/res/stack-overflow-brands.svg">
+            </div>
+          </a>
+          <a href="https://www.instagram.com/kulartist/">
+            <div class="social-icon-back"> <img class="social-icon-image" src="assets/res/instagram-brands.svg"></div>
+          </a> -->
+          <!-- <a href="https://play.google.com/store/apps/developer?id=Gilpix">
+            <div class="social-icon-back"> <img class="social-icon-image" src="assets/res/google-play-brands.svg"></div>
+          </a> -->
+        </div>
+        <div class="about-content">
+          <p style="color: #F5F5F5">Handcrafted by - Jameel Wani <span style="color: #DB4437"> &copy2020</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/stellar.js"></script>
-    <script src="vendors/lightbox/simpleLightbox.min.js"></script>
-    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-    <script src="vendors/isotope/isotope-min.js"></script>
-    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-    <script src="vendors/counter-up/jquery.counterup.min.js"></script>
-    <script src="js/mail-script.js"></script>
-    <!--gmaps Js-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-    <script src="js/gmaps.min.js"></script>
-    <script src="js/theme.js"></script>
+
+  <!-- Vendor JS Files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+    integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+    integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script type="text/javascript" src="assets/js/kulArtist.js"></script>
 </body>
 
 </html>
