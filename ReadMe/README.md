@@ -1,34 +1,29 @@
-# Name of Project
+# Jameel Altaf Wani - Portfolio
 
 ## Table of Contents
 
 - [Overview](#overview)
 - [Built With](#built-with)
-- [Features](#features)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
 
 ## Overview
 
 <!-- TODO: Add a screenshot of the live project.
-    1. Link to a 'live demo.'
-    2. Describe your overall experience in a couple of sentences.
-    3. List a few specific technical things that you learned or improved on.
-    4. Share any other tips or guidance for others attempting this or something similar.
+    1. Link to a 'https://jameelaltaf.github.io/'
+    2. My digital marketing journey has been a thrilling exploration of creativity, data, and innovation. From crafting compelling content to analyzing audience            behavior, I've embraced the dynamic landscape of online marketing to drive engagement, growth, and impact..
+    3. I built my digital marketing portfolio with HTML, CSS, and JavaScript. I used Bootstrap and some JavaScript libraries to make it look cool and user-friendly.        Enjoy exploring!
+    4. I recommend using some bootstrap to be able to make your portfolio unique and better when it comes to showing some of your technical skills.
  -->
 
 ### Built With
 
-<!-- TODO: List any MAJOR libraries/frameworks (e.g. React, Tailwind) with links to their homepages. -->
-
-## Features
-
-<!-- TODO: List what specific 'user problems' that this application solves. -->
+<!-- HTML, CSS, JAVASCRIPT AND BOOTSTRAP -->
 
 ## Contact
 
-<!-- TODO: Include icons and links to your RELEVANT, PROFESSIONAL 'DEV-ORIENTED' social media. LinkedIn and dev.to are minimum. -->
+<!-- LINKEDIN - https://www.linkedin.com/in/jameelwani/ -->
 
 ## Acknowledgements
 
-<!-- TODO: List any blog posts, tutorials or plugins that you may have used to complete the project. Only list those that had a significant impact. Obviously, we all 'Google' stuff while working on our things, but maybe something in particular stood out as a 'major contributor' to your skill set for this project. -->
+<!-- I built my digital marketing portfolio with HTML, CSS, and JavaScript. I used Bootstrap and some JavaScript libraries to make it look cool and user-friendly.        Enjoy exploring! -->
