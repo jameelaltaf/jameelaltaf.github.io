@@ -115,76 +115,87 @@ img {
 }
 
 /* =====================================================
-   LOADER
+   LOADER - Awwwards Style
    ===================================================== */
 .loader {
     position: fixed;
     inset: 0;
     background: var(--color-bg);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: 9999;
-    transition: opacity 0.6s ease, visibility 0.6s ease;
+    transition: clip-path 1s cubic-bezier(0.77, 0, 0.175, 1);
+    clip-path: inset(0 0 0 0);
 }
 
 .loader.hidden {
-    opacity: 0;
-    visibility: hidden;
+    clip-path: inset(0 0 100% 0);
     pointer-events: none;
+}
+
+.loader-counter {
+    position: absolute;
+    bottom: 40px;
+    right: 48px;
+    font-family: var(--font-display);
+    font-size: clamp(80px, 20vw, 200px);
+    font-weight: 400;
+    line-height: 1;
+    color: var(--color-text);
+    opacity: 0.15;
 }
 
 .loader-content {
     text-align: center;
+    overflow: hidden;
 }
 
-.loader-label {
-    font-family: var(--font-primary);
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.3em;
-    color: var(--color-text-muted);
-    margin-bottom: 40px;
-    display: block;
-}
-
-.loader-title {
+.loader-text {
     display: flex;
-    align-items: baseline;
-    justify-content: center;
-    gap: 12px;
-    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
 }
 
-.loader-word {
-    font-family: var(--font-primary);
-    font-size: 24px;
-    font-weight: 600;
-    letter-spacing: 0.2em;
-}
-
-.loader-year {
+.loader-line {
+    display: block;
     font-family: var(--font-display);
-    font-size: 24px;
-    font-style: italic;
+    font-size: clamp(32px, 8vw, 80px);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: revealLine 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-.loader-progress-wrap {
-    width: 200px;
-    height: 1px;
+.loader-line[data-delay="0"] { animation-delay: 0.2s; }
+.loader-line[data-delay="1"] { animation-delay: 0.4s; }
+.loader-line[data-delay="2"] { animation-delay: 0.6s; }
+
+@keyframes revealLine {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.loader-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
     background: var(--color-border);
-    margin: 0 auto;
 }
 
-.loader-progress {
+.loader-bar-inner {
     height: 100%;
     width: 0;
     background: var(--color-text);
-    animation: loadProgress 2s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;
-}
-
-@keyframes loadProgress {
-    to { width: 100%; }
+    transition: width 0.1s linear;
 }
 
 /* =====================================================
@@ -192,9 +203,8 @@ img {
    ===================================================== */
 .theme-toggle {
     position: fixed;
-    top: 50%;
-    right: 48px;
-    transform: translateY(-50%);
+    top: 24px;
+    right: 24px;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -217,12 +227,28 @@ img {
     height: 20px;
     position: absolute;
     transition: opacity 0.3s, transform 0.3s;
+    stroke: var(--color-text);
 }
 
-[data-theme="dark"] .theme-icon.sun { opacity: 1; transform: rotate(0); }
-[data-theme="dark"] .theme-icon.moon { opacity: 0; transform: rotate(-90deg); }
-[data-theme="light"] .theme-icon.sun { opacity: 0; transform: rotate(90deg); }
-[data-theme="light"] .theme-icon.moon { opacity: 1; transform: rotate(0); }
+/* Dark mode: show sun icon (white) */
+[data-theme="dark"] .theme-icon.sun { 
+    opacity: 1; 
+    transform: rotate(0);
+}
+[data-theme="dark"] .theme-icon.moon { 
+    opacity: 0; 
+    transform: rotate(-90deg);
+}
+
+/* Light mode: show moon icon */
+[data-theme="light"] .theme-icon.sun { 
+    opacity: 0; 
+    transform: rotate(90deg);
+}
+[data-theme="light"] .theme-icon.moon { 
+    opacity: 1; 
+    transform: rotate(0);
+}
 
 /* =====================================================
    NAVIGATION
@@ -901,10 +927,7 @@ a.contact-value:hover {
     .nav { padding: 0 24px; }
     .theme-toggle {
         top: 18px;
-        right: 80px;
-        transform: none;
-        width: 44px;
-        height: 44px;
+        right: 76px;
     }
     
     .hero { padding: var(--nav-height) 24px 120px; }
@@ -932,9 +955,8 @@ a.contact-value:hover {
     .theme-toggle {
         width: 40px;
         height: 40px;
-        right: 70px;
+        right: 68px;
         top: 12px;
-        transform: none;
     }
     
     .name-text { font-size: clamp(48px, 15vw, 100px); }

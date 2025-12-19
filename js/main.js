@@ -27,18 +27,46 @@ function initLoader() {
         return;
     }
     
-    const hideLoader = () => {
-        setTimeout(() => {
-            loader.classList.add('hidden');
-            document.body.classList.add('loaded');
-        }, 2800);
+    const counter = document.getElementById('loader-counter');
+    const bar = document.getElementById('loader-bar');
+    
+    // Animate counter from 0 to 100
+    let count = 0;
+    const duration = 2400; // 2.4 seconds
+    const startTime = performance.now();
+    
+    const animateCounter = (currentTime) => {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        
+        // Easing function for smooth deceleration
+        const easeOutExpo = 1 - Math.pow(2, -10 * progress);
+        count = Math.floor(easeOutExpo * 100);
+        
+        if (counter) {
+            counter.textContent = count;
+        }
+        
+        if (bar) {
+            bar.style.width = `${count}%`;
+        }
+        
+        if (progress < 1) {
+            requestAnimationFrame(animateCounter);
+        } else {
+            // Ensure we end at 100
+            if (counter) counter.textContent = '100';
+            if (bar) bar.style.width = '100%';
+            
+            // Hide loader after completion
+            setTimeout(() => {
+                loader.classList.add('hidden');
+                document.body.classList.add('loaded');
+            }, 400);
+        }
     };
     
-    if (document.readyState === 'complete') {
-        hideLoader();
-    } else {
-        window.addEventListener('load', hideLoader);
-    }
+    requestAnimationFrame(animateCounter);
     
     // Fallback
     setTimeout(() => {
